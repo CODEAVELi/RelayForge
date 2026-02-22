@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Relay Next Diagnostics</title>
+  <style>body{font-family:system-ui;padding:16px}pre{background:#111;color:#0f0;padding:12px;white-space:pre-wrap}</style>
+</head>
+<body>
+  <h2>OpenClaw Relay Next Diagnostics</h2>
+  <button id="refresh">Refresh</button>
+  <button id="copy">Copy JSON</button>
+  <button id="saveAllowlist">Save Allowlist</button>
+  <button id="saveWebhook">Save Crash Webhook</button>
+  <div>
+    <label>Allowlist (one host pattern per line):</label><br/>
+    <textarea id="allowlist" rows="6" cols="80"></textarea>
+  </div>
+  <div>
+    <label>Crash webhook URL (optional):</label><br/>
+    <input id="webhook" size="80" />
+  </div>
+  <pre id="out">loading...</pre>
+  <script type="module" src="./diagnostics.js"></script>
+</body>
+</html>

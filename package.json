@@ -1,0 +1,13 @@
+{
+  "name": "openclaw-relay-next",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "build:chrome": "node tools/build.mjs chrome",
+    "build:firefox": "node tools/build.mjs firefox",
+    "package": "node tools/package.mjs",
+    "dev": "node tools/build.mjs chrome --watch"
+  }
+}
