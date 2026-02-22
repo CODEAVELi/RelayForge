@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Generated build artifacts
+dist/
+deploy/
+release/
+
+# OS/editor
+.DS_Store
+.vscode/
+
+# Logs
+*.log
