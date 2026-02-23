@@ -26,8 +26,15 @@ export async function loadConfig() {
     EXTRA_KEYS.queueVersion,
     EXTRA_KEYS.crashWebhook
   ]);
+  let wsUrl = data[STORAGE_KEYS.wsUrl] || DEFAULT_WS_URL;
+  // Migrate legacy path used by earlier RelayForge builds.
+  if (typeof wsUrl === 'string' && wsUrl.endsWith('/relay')) {
+    wsUrl = wsUrl.replace(/\/relay$/, '/extension');
+    await chrome.storage.local.set({ [STORAGE_KEYS.wsUrl]: wsUrl });
+  }
+
   return {
-    wsUrl: data[STORAGE_KEYS.wsUrl] || DEFAULT_WS_URL,
+    wsUrl,
     enabled: data[STORAGE_KEYS.enabled] ?? true,
     session: data[STORAGE_KEYS.session] || null,
     queue: data[EXTRA_KEYS.queue] || [],

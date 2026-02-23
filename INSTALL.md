@@ -19,7 +19,7 @@
 - Firefox ZIP: `RelayForge/release/RelayForge-firefox.zip`
 
 ## First-run checklist
-- Verify WebSocket endpoint reachable (`ws://127.0.0.1:18792/relay` by default)
+- Verify WebSocket endpoint reachable (`ws://127.0.0.1:18792/extension` by default)
 - Bind tab via toolbar icon
 - Run one action and confirm diagnostics updates
 - Confirm allowlist includes your target domain

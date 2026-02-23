@@ -1,5 +1,5 @@
 export const RELAY_VERSION = '0.1.1';
-export const DEFAULT_WS_URL = 'ws://127.0.0.1:18792/relay';
+export const DEFAULT_WS_URL = 'ws://127.0.0.1:18792/extension';
 
 export const STORAGE_KEYS = {
   wsUrl: 'relay.wsUrl',
