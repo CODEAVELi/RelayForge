@@ -7,7 +7,7 @@ Reliability-first browser relay infrastructure for AI/browser automation.
 
 ## Quick Start
 ```bash
-cd relay-next
+cd RelayForge
 make setup
 make deploy-local
 ```
@@ -18,7 +18,7 @@ Then:
 
 ## Repository Structure
 ```text
-relay-next/
+RelayForge/
 ├── src/                     # Extension runtime source
 │   ├── background/          # ws, queue orchestration, audit, telemetry
 │   ├── content/             # in-tab action executor

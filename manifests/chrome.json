@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "OpenClaw Relay Next",
+  "name": "RelayForge",
   "version": "0.1.0",
   "description": "Resilient browser relay for OpenClaw",
   "permissions": ["storage", "tabs", "scripting", "activeTab"],

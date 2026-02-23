@@ -8,8 +8,8 @@ npm run package
 
 rm -rf deploy/chrome deploy/firefox
 mkdir -p deploy/chrome deploy/firefox
-unzip -oq release/relay-next-chrome.zip -d deploy/chrome
-unzip -oq release/relay-next-firefox.zip -d deploy/firefox
+unzip -oq release/RelayForge-chrome.zip -d deploy/chrome
+unzip -oq release/RelayForge-firefox.zip -d deploy/firefox
 
 echo "✅ Local deploy artifacts ready:"
 echo "  - $ROOT/deploy/chrome"

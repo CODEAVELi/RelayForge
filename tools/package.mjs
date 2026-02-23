@@ -16,7 +16,7 @@ console.log('Release artifacts in', outDir);
 
 function zip(target) {
   const src = path.join(root, 'dist', target);
-  const out = path.join(outDir, `relay-next-${target}.zip`);
+  const out = path.join(outDir, `RelayForge-${target}.zip`);
   try { fs.unlinkSync(out); } catch {}
   execSync(`cd "${src}" && zip -r "${out}" .`, { stdio: 'inherit' });
 }

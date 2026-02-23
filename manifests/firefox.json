@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "OpenClaw Relay Next",
+  "name": "RelayForge",
   "version": "0.1.0",
   "description": "Resilient browser relay for OpenClaw",
   "permissions": ["storage", "tabs", "activeTab", "scripting"],
@@ -14,7 +14,8 @@
   },
   "background": {
     "service_worker": "src/background/main.js",
-    "type": "module"
+    "type": "module",
+    "scripts": ["src/background/firefox-compat.js"]
   },
   "content_scripts": [
     {
@@ -25,7 +26,7 @@
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "relay-next@openclaw.local"
+      "id": "relayforge@openclaw.local"
     }
   }
 }
