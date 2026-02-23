@@ -6,7 +6,7 @@
   "permissions": ["storage", "tabs", "scripting", "activeTab"],
   "host_permissions": ["<all_urls>"],
   "action": {
-    "default_title": "Bind this tab to OpenClaw Relay"
+    "default_title": "Bind this tab to RelayForge"
   },
   "options_page": "src/diagnostics.html",
   "background": {

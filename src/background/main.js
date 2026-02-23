@@ -102,8 +102,12 @@ async function boot() {
 
 async function currentTabUrl() {
   if (!state.activeTabId) return null;
-  const tab = await chrome.tabs.get(state.activeTabId);
-  return tab?.url || null;
+  try {
+    const tab = await chrome.tabs.get(state.activeTabId);
+    return tab?.url || null;
+  } catch {
+    return null;
+  }
 }
 
 async function handleExec(msg) {
